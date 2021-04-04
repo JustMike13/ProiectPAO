@@ -5,10 +5,7 @@ import Persoane.Persoana;
 import Produse.Produs;
 
 import java.sql.SQLOutput;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class Service {
     private static Set<Produs> Produse = new HashSet<Produs>();
@@ -57,7 +54,12 @@ public class Service {
     }
 
     public void ListaProduse(){
-        System.out.println(Produse);
+        Iterator<Produs> it = Produse.iterator();
+        int index = 1;
+        while(it.hasNext()){
+            System.out.println(index + ". " + it.next());
+            index = index + 1;
+        }
     }
 
     public static Set<Produs> getProduse() {
