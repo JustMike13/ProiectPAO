@@ -56,12 +56,8 @@ public class Service {
         System.out.println("Stocul produsului "+p.getDenumire() +" a fost actualizat. Stoc curent: "+p.getStoc());
     }
 
-
-    private static Angajat[] addToArray(Angajat[] Angajati, Angajat pNou){
-        Angajat[] temp = new Angajat[Angajati.length+1];
-        System.arraycopy(Angajati,0,temp,0,Angajati.length);
-        temp[Angajati.length] = pNou;
-        return temp;
+    public void ListaProduse(){
+        System.out.println(Produse);
     }
 
     public static Set<Produs> getProduse() {
