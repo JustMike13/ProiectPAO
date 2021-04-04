@@ -28,7 +28,7 @@ public class Main {
         myService.modificaStoc(a2, Whisky1, 20);
 
         System.out.println(myService.getPersoane());
-        System.out.println(myService.getProduse());
+        myService.ListaProduse();
 
     }
 }
