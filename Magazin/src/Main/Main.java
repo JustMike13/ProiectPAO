@@ -9,6 +9,12 @@ public class Main {
     public static void main(String[] args) {
         Service myService = new Service();
 
+        String writeFilePath = "D:\\FMI 2 sem 2\\PAO\\Proiect\\Magazin\\MyFiles\\Report.csv";
+        myService.start(writeFilePath);
+
+        String filePath1 = "D:\\FMI 2 sem 2\\PAO\\Proiect\\Magazin\\MyFiles\\Persoane.csv";
+        String filePath2 = "D:\\FMI 2 sem 2\\PAO\\Proiect\\Magazin\\MyFiles\\Angajati.csv";
+
         Angajat a1 = new Angajat("Ristea","Mihai","Manager", 20000);
         Angajat a2 = new Angajat("Popescu","George","Lucrator comencial",1000);
         Angajat a3 = new Angajat("Popa","Marian","Lucrator comercial", 1000);
@@ -30,5 +36,15 @@ public class Main {
         System.out.println(myService.getPersoane());
         myService.ListaProduse();
 
+        myService.readPersoana(filePath1);
+        myService.readAngajat(filePath2);
+
+        System.out.println(myService.getPersoane());
+        System.out.println(myService.getAngajati());
+
+
+
+
+        myService.end();
     }
 }

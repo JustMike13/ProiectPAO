@@ -39,11 +39,7 @@ public class Persoana {
 
     @Override
     public String toString() {
-        return "Persoana{" +
-                "nume='" + nume + '\'' +
-                ", prenume='" + prenume + '\'' +
-                ", buget=" + buget +
-                '}';
+        return "Persoana{" +nume + ' ' + prenume +'}';
     }
     public String getNumeComplet(){
         return nume+" "+prenume;

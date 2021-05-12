@@ -36,8 +36,8 @@ public class FructLeguma extends Produs{
     public String toString() {
         return "FructLeguma{" +
                 super.getDenumire() +
-                "Origine='" + Origine + '\'' +
-                ", Tip='" + Tip + '\'' +
+                "Origine= '" + Origine + '\'' +
+                "; Tip='" + Tip + '\'' +
                 '}';
     }
 }

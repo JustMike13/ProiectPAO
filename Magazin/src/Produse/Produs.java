@@ -65,7 +65,7 @@ public class Produs {
     @Override
     public String toString() {
         return "Produs{" +
-                "denumire='" + denumire + '\'' +
+                "denumire= '" + denumire + '\'' +
                 '}';
     }
     public void adaugaStoc(int s){

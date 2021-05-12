@@ -49,7 +49,7 @@ public class Angajat extends Persoana{
     @Override
     public String toString() {
         return "Angajat{" +this.getPrenume() + " " +
-                this.getNume() +
+                this.getNume() + "; " + this.getFunctie() +
                 '}';
     }
 

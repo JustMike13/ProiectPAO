@@ -25,7 +25,7 @@ public class BauturaAlcoolica extends Bautura{
     public String toString() {
         return "BauturaAlcoolica{" +
                 super.getDenumire() +
-                ", alcool=" + alcool +"%"+
+                "; alcool= " + alcool +"%"+
                 '}';
     }
 }
