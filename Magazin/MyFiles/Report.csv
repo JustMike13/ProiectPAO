@@ -1,18 +1,20 @@
 nume_actiune,timestamp
-S-a adaugat Angajat{Mihai Ristea; Manager},2021-05-11 20:20:06.786
-S-a adaugat Angajat{George Popescu; Lucrator comencial},2021-05-11 20:20:06.85
-S-a adaugat Angajat{Marian Popa; Lucrator comercial},2021-05-11 20:20:06.85
-Mezeluri{Salam Victoria} a fost adaugat,2021-05-11 20:20:06.85
-BauturaAlcoolica{Jack Daniel's Tennessee Whiskey; alcool= 40%} a fost adaugat,2021-05-11 20:20:06.851
-Produsul Dulciuri{Bomboane} fost adaugat de catre Angajat{Mihai Ristea; Manager} si stocul actualizat la 20,2021-05-11 20:20:06.851
-Stocul produsului Bomboane a fost actualizat de catre Angajat{Mihai Ristea; Manager}. Stoc curent: 20.0,2021-05-11 20:20:06.858
-Stocul produsului Jack Daniel's Tennessee Whiskey a fost actualizat de catre Angajat{George Popescu; Lucrator comencial}. Stoc curent: 20.0,2021-05-11 20:20:06.858
-Afisare lista produse,2021-05-11 20:20:06.876
-S-a adaugat Persoana{Ristea Mihai},2021-05-11 20:20:06.969
-S-a adaugat Persoana{Popescu Gheorghe},2021-05-11 20:20:06.969
-S-a adaugat Persoana{Ionescu Vasile},2021-05-11 20:20:06.969
-Au fost adaugate 3 persoane din fisier,2021-05-11 20:20:06.969
-S-a adaugat Angajat{Florin Popescu; Manager},2021-05-11 20:20:06.971
-S-a adaugat Angajat{Maria Stan; Sef de tura},2021-05-11 20:20:06.971
-S-a adaugat Angajat{Geta Nistor; Lucrator Comercial},2021-05-11 20:20:06.971
-Au fost adaugati 3 angajati din fisier,2021-05-11 20:20:06.971
+S-a citit lista de persoane,2021-05-26 20:54:42.319
+S-a citit lista de angajati,2021-05-26 20:54:42.33
+S-a citit lista de Produse,2021-05-26 20:54:42.346
+S-a citit lista de bauturi,2021-05-26 20:54:42.356
+S-a citit lista de persoane,2021-05-26 20:54:42.375
+S-a citit lista de angajati,2021-05-26 20:54:42.383
+S-a adaugat un angajat,2021-05-26 20:54:42.39
+S-a citit lista de persoane,2021-05-26 20:54:42.406
+S-a citit lista de angajati,2021-05-26 20:54:42.413
+S-a adaugat un angajat,2021-05-26 20:54:42.42
+S-a citit lista de persoane,2021-05-26 20:54:42.434
+S-a citit lista de angajati,2021-05-26 20:54:42.442
+S-a modificat un angajat,2021-05-26 20:54:42.448
+S-a citit lista de Produse,2021-05-26 20:54:42.461
+S-a citit lista de bauturi,2021-05-26 20:54:42.468
+S-a adaugat un produs,2021-05-26 20:54:42.474
+S-a citit lista de Produse,2021-05-26 20:54:42.488
+S-a citit lista de bauturi,2021-05-26 20:54:42.494
+S-a sters un produs,2021-05-26 20:54:42.499

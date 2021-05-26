@@ -1,7 +1,7 @@
 package Produse;
 
 public class Dulciuri extends Produs{
-    int ContinutZahar; // gr/100g
+    private int ContinutZahar; // gr/100g
 
     public Dulciuri(String denumire, int pret, String cantitate, int continutZahar, String unitate) {
         super(denumire, pret, cantitate, unitate);

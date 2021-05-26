@@ -3,6 +3,7 @@ package Persoane;
 import Produse.Produs;
 
 public class Persoana {
+    private int persoanaId = 0;
     private String nume;
     private String prenume;
     private int buget;
@@ -11,6 +12,12 @@ public class Persoana {
         this.nume = nume;
         this.prenume = prenume;
         this.buget = 0;
+    }
+    public Persoana(int id, String nume, String prenume, int buget) {
+        this.persoanaId = id;
+        this.nume = nume;
+        this.prenume = prenume;
+        this.buget = buget;
     }
 
     public String getNume() {
@@ -39,7 +46,7 @@ public class Persoana {
 
     @Override
     public String toString() {
-        return "Persoana{" +nume + ' ' + prenume +'}';
+        return persoanaId + ". Persoana{" +nume + ' ' + prenume +'}';
     }
     public String getNumeComplet(){
         return nume+" "+prenume;
@@ -50,7 +57,16 @@ public class Persoana {
         this.ActualizeazaBuget(-pret);
     }
 
+    public int getPersoanaId() {
+        return persoanaId;
+    }
+
+    public void setPersoanaId(int persoanaId) {
+        this.persoanaId = persoanaId;
+    }
+
     public void ActualizeazaBuget(int b) {
         this.buget = this.buget + b;
     }
+
 }

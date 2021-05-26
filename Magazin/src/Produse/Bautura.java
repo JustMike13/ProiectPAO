@@ -1,9 +1,13 @@
 package Produse;
 
 public class Bautura extends Produs{
-    int ContinutZahar; //gr/100ml
+    private int ContinutZahar; //gr/100ml
     public Bautura(String denumire, int pret,int Zahar, String unitate){
         super(denumire,pret,"1",unitate);
+        this.ContinutZahar = Zahar;
+    }
+    public Bautura(int id, String denumire, int pret,String cantitate, String unitate,float stoc, int Zahar){
+        super(id, denumire, pret, cantitate, unitate, stoc);
         this.ContinutZahar = Zahar;
     }
     public Bautura(String denumire, int pret,int Zahar){

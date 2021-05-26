@@ -1,11 +1,13 @@
 package Produse;
 
 public class Produs {
+    private int productId = 0;
     private String denumire;
     private int pret;
-    String cantitate; //100g sau 1 buc sau 30buc / cutie etc
+    private String cantitate; //100g sau 1 buc sau 30buc / cutie etc
     private String unitate; //bucata/kg/litru
     private float stoc; // putem avea 2.5 kg pe stoc, de aceea float
+    private Main.Etapa3.DbConnection dbConnection = Main.Etapa3.DbConnection.getInstance();
 
     public Produs(String denumire, int pret, String cantitate, String unitate) {
         this.denumire = denumire;
@@ -14,12 +16,25 @@ public class Produs {
         this.cantitate = cantitate;
         this.stoc = 0;
     }
+    public Produs(int id, String denumire, int pret, String cantitate, String unitate, float stoc) {
+        this.denumire = denumire;
+        this.pret = pret;
+        this.unitate = unitate;
+        this.cantitate = cantitate;
+        this.stoc = 0;
+        this.productId = id;
+        this.stoc = stoc;
+    }
     public Produs(String denumire, int pret, String cantitate){
         this.denumire = denumire;
         this.pret = pret;
         this.unitate = "Bucata";
         this.cantitate = cantitate;
         this.stoc = 0;
+    }
+
+    public void setProductId(int productId) {
+        this.productId = productId;
     }
 
     public String getCantitate() {
@@ -31,7 +46,7 @@ public class Produs {
     }
 
     public String getDenumire() {
-        return denumire;
+        return this.denumire;
     }
 
     public void setDenumire(String denumire) {
@@ -75,5 +90,9 @@ public class Produs {
     public int Cumpara(int n){
         this.stoc = this.stoc - n;
         return n * this.pret;
+    }
+
+    public int getProductId() {
+        return productId;
     }
 }

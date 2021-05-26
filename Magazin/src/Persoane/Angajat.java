@@ -3,11 +3,16 @@ package Persoane;
 import Produse.Produs;
 
 public class Angajat extends Persoana{
-    String functie;
-    int salariu;
+    private String functie;
+    private int salariu;
 
     public Angajat(String nume, String prenume, String functie, int salariu) {
         super(nume, prenume);
+        this.functie = functie;
+        this.salariu = salariu;
+    }
+    public Angajat(int id, String nume, String prenume, int buget, String functie, int salariu) {
+        super(id, nume, prenume, buget);
         this.functie = functie;
         this.salariu = salariu;
     }

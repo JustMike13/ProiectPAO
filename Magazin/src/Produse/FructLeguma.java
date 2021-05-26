@@ -1,8 +1,8 @@
 package Produse;
 
 public class FructLeguma extends Produs{
-    String Origine;
-    String Tip;
+    private String Origine;
+    private String Tip;
 
     public FructLeguma(String denumire, int pret, String cantitate, String origine, String tip, String unitate) {
         super(denumire, pret, cantitate, unitate);

@@ -1,7 +1,7 @@
 package Produse;
 
 public class BauturaAlcoolica extends Bautura{
-    int alcool;//procent
+    private int alcool;//procent
 
     public BauturaAlcoolica(String denumire, int pret, int Zahar, String unitate, int alcool) {
         super(denumire, pret, Zahar, unitate);
